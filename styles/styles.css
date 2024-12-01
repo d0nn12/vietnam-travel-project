@@ -21,8 +21,12 @@ body {
 .grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
 }
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
 }
 .card {
   background-color: white;
@@ -31,6 +35,10 @@ body {
 .card-body {
   padding: 30px;
 }
+.card-header.grid {
+  grid-gap: 0;
+}
+
 .card-footer {
   padding: 30px;
 }
@@ -187,5 +195,11 @@ footer a {
   }
   section {
     padding: 30px 30px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
