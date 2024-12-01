@@ -5,6 +5,14 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/cover.jpg");
@@ -47,7 +55,41 @@ header a {
   display: inline-block;
   margin-top: 25px;
 }
-@media (max-width: 900px) {
+footer {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/Cao-Bang-Vietnam.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+footer h3 {
+  font-weight: 700px;
+  font-size: 20px;
+  line-height: 30px;
+}
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.9;
+  line-height: 24px;
+  margin-right: 20px;
+}
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer ul {
+  padding: 0;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.7;
+}
+
+@media (max-width: 960px) {
   header {
     padding: 60px;
   }
